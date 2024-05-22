@@ -76,7 +76,7 @@
   - [¿Qué es el protocolo ActivityPub?](#¿Qué-es-el-protocolo-ActivityPub)
   - [En qué ámbitos se puede usar ActivityPub](#En-qué-ámbitos-se-puede-usar-ActivityPub)
 - [Preprocesadores](#Preprocesadores)
-- [SGI (Sistemas de Gestión Integrados)](#SGI-Sistemas-de-Gestión-Integrados)
+- [SGI (Sistemas de Gestión de Información)](#SGI-Sistemas-de-Gestión-Información)
     - [Dentro de SGI:](#Dentro-de-SGI)
     - [Interrelación entre Componentes de un SGI](#Interrelación-entre-Componentes-de-un-SGI)
   - [ERP: Enterprise Resource Planning](#ERP-Enterprise-Resource-Planning)
@@ -3555,13 +3555,9 @@ Estos preprocesadores CSS son ampliamente utilizados en el desarrollo web para m
 
 ---
 
-# SGI (Sistemas de Gestión Integrados)
-Los Sistemas de Gestión Integrados (SGI) son plataformas que combinan múltiples sistemas de gestión dentro de una organización para mejorar la eficiencia y la toma de decisiones. Un SGI típicamente integra los siguientes sistemas:
+# SGI (Sistemas de Gestión Información)
 
-1. **ERP (Enterprise Resource Planning)**: Como mencionamos anteriormente, el ERP es uno de los componentes principales de un SGI. Gestiona los recursos empresariales, como finanzas, recursos humanos, cadena de suministro, inventario, ventas, compras y más, en una única plataforma integrada.
-
-2. **CRM (Customer Relationship Management)**: El CRM es otro componente importante que se enfoca en la gestión de las relaciones con los clientes. Permite a la empresa administrar la información de los clientes, seguimiento de ventas, marketing, atención al cliente y análisis de datos para mejorar las relaciones con los clientes y aumentar la retención.
-
+Los Sistemas de Gestión de Información (SGI) incluyen diversas herramientas diseñadas para mejorar la eficiencia y efectividad en la gestión de la información de una organización. Entre los más importantes se encuentran los sistemas ERP (Enterprise Resource Planning) y CRM (Customer Relationship Management).
 
 ### Dentro de SGI:
 La inteligencia empresarial (Business Intelligence o BI) dentro de un SGI permite la recopilación, integración, análisis y presentación de información empresarial. Incluye herramientas como:
@@ -3641,7 +3637,6 @@ Los tres ERP más implantados y ampliamente reconocidos en el mercado son SAP ER
 En resumen, SAP ERP, Oracle ERP Cloud y Microsoft Dynamics 365 son tres de los ERP más importantes y ampliamente utilizados en el mercado. Cada uno tiene sus propias características distintivas y fortalezas, por lo que la elección entre ellos dependerá de las necesidades específicas de la empresa, el presupuesto y otros factores clave.
 
 ## CRM: Customer Relationship Management
-Es un componente esencial dentro de los Sistemas de Gestión Integrados (SGI):
 
 1. **Definición**:
    - CRM es una estrategia empresarial centrada en el cliente que se enfoca en la gestión de las relaciones con los clientes y prospectos. Su objetivo principal es mejorar la satisfacción del cliente, fomentar la lealtad y maximizar la rentabilidad a través de la recopilación y el análisis de datos sobre las interacciones con los clientes.

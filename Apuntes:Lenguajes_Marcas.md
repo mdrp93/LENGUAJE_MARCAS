@@ -1236,6 +1236,81 @@ La principal diferencia entre las animaciones y las transiciones en CSS radica e
 
 En resumen, las transiciones son más simples y se utilizan para efectos más simples y directos, mientras que las animaciones ofrecen mayor flexibilidad y se utilizan para crear efectos más complejos y dinámicos en los elementos HTML.
 
+## Propiedad CSS: Scroll-snap
+
+La propiedad CSS `scroll-snap` es una característica que permite controlar el comportamiento de desplazamiento de un contenedor en relación con los puntos de anclaje definidos. Estos puntos de anclaje determinan dónde se detendrá el desplazamiento dentro del contenedor. Aquí tienes una descripción de las propiedades principales relacionadas con `scroll-snap` y algunos ejemplos:
+
+#### Propiedades principales del scroll-snap
+
+1. **`scroll-snap-type`**:
+   - Define cómo se comporta el desplazamiento en un contenedor y especifica si el desplazamiento debe "adherirse" a los puntos de anclaje definidos o si es solo una preferencia.
+   - Valores posibles:
+     - `scroll-snap-type: none;`: No se aplica scroll snap.
+     - `scroll-snap-type: mandatory;`: El desplazamiento se detendrá en los puntos de anclaje.
+     - `scroll-snap-type: proximity;`: El desplazamiento preferirá los puntos de anclaje, pero no es obligatorio.
+
+2. **`scroll-snap-align`**:
+   - Especifica cómo se alinearán los elementos secundarios del contenedor con los puntos de anclaje.
+   - Valores posibles:
+     - `scroll-snap-align: start;`: Los elementos secundarios se alinearán al inicio del contenedor.
+     - `scroll-snap-align: center;`: Los elementos secundarios se alinearán en el centro del contenedor.
+     - `scroll-snap-align: end;`: Los elementos secundarios se alinearán al final del contenedor.
+
+##### Ejemplo 1: Scroll Snap Horizontal
+
+```css
+.container {
+  width: 100%;
+  height: 300px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  scroll-snap-align: center;
+}
+```
+
+```html
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
+```
+
+En este ejemplo, el contenedor tiene desplazamiento horizontal y cada elemento secundario se alinea en el centro del contenedor. El desplazamiento se detiene en cada elemento secundario, asegurando que estén bien centrados en la vista.
+
+#### Ejemplo 2: Scroll Snap Vertical
+
+```css
+.container {
+  width: 300px;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  scroll-snap-align: start;
+}
+```
+
+```html
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
+```
+
+En este ejemplo, el contenedor tiene desplazamiento vertical y cada elemento secundario se alinea en la parte superior del contenedor. El desplazamiento se detiene en cada elemento secundario, asegurando que estén bien alineados en la parte superior de la vista.
+
+Estos son solo ejemplos básicos de cómo se puede utilizar `scroll-snap` para controlar el desplazamiento en un contenedor. La propiedad puede combinarse con otras técnicas de diseño para crear experiencias de usuario más fluidas y atractivas, especialmente en dispositivos táctiles.
 # Código HTML y CSS
  
 Explica que hace el código:

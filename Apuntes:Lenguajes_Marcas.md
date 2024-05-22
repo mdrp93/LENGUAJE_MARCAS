@@ -66,6 +66,10 @@
     - [Transiciones CSS](#Transiciones-CSS)
     - [Animaciones CSS](#Animaciones-CSS)
     - [Cuándo Usar Cada Uno](#Cuándo-Usar-Cada-Uno)
+- [Propiedad CSS: Scroll-snap](#Propiedad-CSS:-Scroll-snap)
+    - [Propiedades principales del Scroll-snap](#Propiedades-principales-del-Scroll-snap)
+    - [Ejemplo 1: Scroll-snap horizontal](#Ejemplo-1:-Scroll-snap-horizontal)
+    - [Ejemplo 2: Scroll-snap horizontal](#Ejemplo-1:-Scroll-snap-vertical)
 - [Código HTML y CSS](#Código-HTML-y-CSS)
   - [Botón hamburguesa](#Botón-hamburguesa)
 - [Fediverso](#Fediverso)
@@ -1001,7 +1005,6 @@ body {
     font-size: 18px;
   }
 }
-
 /* Media query para pantallas más grandes */
 @media screen and (min-width: 1025px) {
   body {
@@ -1222,11 +1225,16 @@ La principal diferencia entre las animaciones y las transiciones en CSS radica e
   
 - **Limitaciones**: Las transiciones tienen limitaciones en cuanto a la cantidad de propiedades que se pueden animar y la complejidad de las animaciones que se pueden crear. Se aplican principalmente a cambios directos entre dos estados, como cambios de color, tamaño, posición, etc.
 
+**- ⚠️La transición solo funciona cuando un elemento cambia de un estado A a un estado B. (Estado de inicio ia estado fin).**
+
+
 ### Animaciones CSS
 
 - **Complejidad**: Las animaciones permiten crear efectos más complejos y dinámicos al definir múltiples fotogramas clave (`@keyframes`) que especifican los estilos del elemento en diferentes puntos de la animación.
   
 - **Flexibilidad**: Las animaciones ofrecen mayor flexibilidad y control sobre la duración, dirección, iteración y otros aspectos de la animación. Se pueden crear efectos más elaborados y sofisticados que las transiciones.
+
+**- ⚠️ Los estados de los elementos animados pueden cambiar no solo 2 estados (inicio y fin), sino que fluctuan en el tiempo entre diferentes estados puediendo tener no solo estado A a estado B, si no tener estados intermedios.**
 
 ### Cuándo Usar Cada Uno
 
@@ -1238,7 +1246,25 @@ En resumen, las transiciones son más simples y se utilizan para efectos más si
 
 ## Propiedad CSS: Scroll-snap
 
-La propiedad CSS `scroll-snap` es una característica que permite controlar el comportamiento de desplazamiento de un contenedor en relación con los puntos de anclaje definidos. Estos puntos de anclaje determinan dónde se detendrá el desplazamiento dentro del contenedor. Aquí tienes una descripción de las propiedades principales relacionadas con `scroll-snap` y algunos ejemplos:
+La propiedad CSS `scroll-snap` es una característica que permite controlar el comportamiento de desplazamiento de un contenedor en relación con los puntos de anclaje definidos. 
+
+Estos puntos de anclaje determinan dónde se detendrá el desplazamiento dentro del contenedor.
+
+El scroll snap es una propiedad CSS que proporciona un control más preciso sobre el desplazamiento en un contenedor de desplazamiento, como un elemento `<div>` con desbordamiento. Aquí tienes algunos puntos importantes sobre el scroll snap:
+
+1. **Control de Desplazamiento Preciso**: Permite que el contenido dentro de un contenedor de desplazamiento se "adhera" a ciertos puntos de anclaje durante el desplazamiento, en lugar de desplazarse de forma continua. Esto puede mejorar la experiencia del usuario al navegar por el contenido, especialmente en dispositivos táctiles.
+
+2. **Propiedades Relacionadas**: La implementación del scroll snap implica el uso de varias propiedades CSS, incluyendo:
+   - `scroll-snap-type`: Define cómo se debe comportar el contenedor de desplazamiento.
+   - `scroll-snap-align`: Especifica cómo se deben alinear los elementos secundarios dentro del contenedor de desplazamiento con respecto a los puntos de anclaje definidos.
+
+3. **Puntos de Anclaje**: Los puntos de anclaje son los puntos específicos a los que se alineará el desplazamiento del contenedor. Estos pueden ser los bordes de los elementos secundarios dentro del contenedor o puntos específicos definidos por el desarrollador.
+
+4. **Tipos de Desplazamiento**: La propiedad `scroll-snap-type` permite definir diferentes modos de desplazamiento, como:
+   - `scroll-snap-type: mandatory`: Indica que el desplazamiento debe "adherirse" a los puntos de anclaje definidos.
+   - `scroll-snap-type: proximity`: Indica que el desplazamiento debería "preferir" los puntos de anclaje, pero no es obligatorio.
+
+5. **Compatibilidad del Navegador**: Aunque el scroll snap es compatible con la mayoría de los navegadores modernos, puede haber diferencias en la implementación entre navegadores. Siempre es una buena práctica realizar pruebas en diferentes navegadores para garantizar la consistencia del comportamiento.
 
 #### Propiedades principales del scroll-snap
 
@@ -1311,6 +1337,8 @@ En este ejemplo, el contenedor tiene desplazamiento horizontal y cada elemento s
 En este ejemplo, el contenedor tiene desplazamiento vertical y cada elemento secundario se alinea en la parte superior del contenedor. El desplazamiento se detiene en cada elemento secundario, asegurando que estén bien alineados en la parte superior de la vista.
 
 Estos son solo ejemplos básicos de cómo se puede utilizar `scroll-snap` para controlar el desplazamiento en un contenedor. La propiedad puede combinarse con otras técnicas de diseño para crear experiencias de usuario más fluidas y atractivas, especialmente en dispositivos táctiles.
+
+
 # Código HTML y CSS
  
 Explica que hace el código:
@@ -1770,7 +1798,12 @@ En resumen, CRM es una herramienta fundamental para las empresas que desean cent
 # Big data, data mining y gestión de datos.
 
 Algunos conceptos a saber: 
+
 #### OLAP (Online Analytical Processing)
+
+- Datos analíticos (información) en bases multiimensonales.
+
+- Diferencia con mineria de datos: OLAP extrae datos tal cual existen mientra que a mineria de datos extrae un razonamiento hipotético/suposición analizando los datos existentes de manera general. 
 
 **Definición**: OLAP es una tecnología que permite a los usuarios interactuar y analizar grandes volúmenes de datos desde múltiples perspectivas. Se usa principalmente en aplicaciones de inteligencia de negocios (BI) para consultas y análisis complejos.
 
@@ -1782,7 +1815,9 @@ Algunos conceptos a saber:
 
 **Uso**: Utilizado en aplicaciones de BI para realizar análisis ad-hoc, generación de informes y toma de decisiones estratégicas.
 
-#### OLTP (Online Transaction Processing)
+#### OLTP (Online Transaction Processing) 
+
+- Datos operacionales en bases de datos transaccionales. 
 
 **Definición**: OLTP es una categoría de sistemas que gestiona transacciones de datos en tiempo real. Está diseñado para manejar un gran número de transacciones breves y rápidas, y es fundamental para las aplicaciones comerciales.
 

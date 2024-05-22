@@ -69,7 +69,7 @@
 - [Propiedad CSS: Scroll-snap](#Propiedad-CSS:-Scroll-snap)
     - [Propiedades principales del Scroll-snap](#Propiedades-principales-del-Scroll-snap)
     - [Ejemplo 1: Scroll-snap horizontal](#Ejemplo-1:-Scroll-snap-horizontal)
-    - [Ejemplo 2: Scroll-snap horizontal](#Ejemplo-1:-Scroll-snap-vertical)
+    - [Ejemplo 2: Scroll-snap vertical](#Ejemplo-1:-Scroll-snap-vertical)
 - [Código HTML y CSS](#Código-HTML-y-CSS)
   - [Botón hamburguesa](#Botón-hamburguesa)
 - [Fediverso](#Fediverso)

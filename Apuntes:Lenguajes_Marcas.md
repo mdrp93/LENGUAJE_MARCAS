@@ -3560,7 +3560,9 @@ Estos preprocesadores CSS son ampliamente utilizados en el desarrollo web para m
 Los Sistemas de Gestión de Información (SGI) incluyen diversas herramientas diseñadas para mejorar la eficiencia y efectividad en la gestión de la información de una organización. Entre los más importantes se encuentran los sistemas ERP (Enterprise Resource Planning) y CRM (Customer Relationship Management).
 
 ### Dentro de SGI:
-La inteligencia empresarial (Business Intelligence o BI) dentro de un SGI permite la recopilación, integración, análisis y presentación de información empresarial. Incluye herramientas como:
+La inteligencia empresarial (Business Intelligence o BI) dentro de un SGI permite la recopilación, integración, análisis y presentación de información empresarial.
+
+Incluye herramientas como:
 
 1. **Dashboard (Tablero de Control)**:
    - **Definición**: Es una interfaz gráfica que muestra los indicadores clave de rendimiento (KPIs) y métricas importantes en un formato visual.
@@ -3577,11 +3579,7 @@ La inteligencia empresarial (Business Intelligence o BI) dentro de un SGI permit
    - **Funciones**: Clasificación, predicción, segmentación, asociación.
    - **Beneficios**: Identificación de relaciones ocultas en los datos, mejora de estrategias de marketing, predicción de comportamientos futuros.
 
-### Interrelación entre Componentes de un SGI
-
-- **Integración ERP y CRM**: El ERP gestiona los recursos internos de la empresa, mientras que el CRM se centra en las relaciones con los clientes. Integrar ambos sistemas permite una visión completa de la operación empresarial, desde la gestión interna hasta la experiencia del cliente.
-- **Uso de BI en SGI**: Las herramientas de BI, como los dashboards, OLAP y data mining, se integran en los sistemas ERP y CRM para proporcionar análisis avanzados y visualización de datos. Esto mejora la toma de decisiones y permite a las empresas reaccionar rápidamente a cambios en el mercado.
-- **Mejora de la Eficiencia**: Al combinar ERP, CRM y BI en un SGI, las empresas pueden optimizar sus procesos, reducir redundancias, mejorar la calidad del servicio al cliente y aumentar su competitividad.
+En resumen, **las herramientas de BI, como los dashboards, OLAP y data mining, se integran en los sistemas ERP y CRM para proporcionar análisis avanzados y visualización de datos. Esto mejora la toma de decisiones y permite a las empresas reaccionar rápidamente a cambios en el mercado**.
 
 ## ERP: Enterprise Resource Planning
 Los ERP (Enterprise Resource Planning) son sistemas de planificación de recursos empresariales que integran y gestionan las principales funciones y procesos de una empresa en un único sistema de software. Aquí tienes algunos puntos clave sobre los ERP:

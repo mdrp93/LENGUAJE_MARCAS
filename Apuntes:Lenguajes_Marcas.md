@@ -78,7 +78,6 @@
 - [Preprocesadores](#Preprocesadores)
 - [SGI (Sistemas de Gestión de Información)](#SGI-Sistemas-de-Gestión-Información)
     - [Dentro de SGI:](#Dentro-de-SGI)
-    - [Interrelación entre Componentes de un SGI](#Interrelación-entre-Componentes-de-un-SGI)
   - [ERP: Enterprise Resource Planning](#ERP-Enterprise-Resource-Planning)
     - [ERP mas implementados](#ERP-mas-implementados)
   - [CRM: Customer Relationship Management](#CRM-Customer-Relationship-Management)

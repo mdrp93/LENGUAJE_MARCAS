@@ -762,6 +762,9 @@ HTML también permite la incorporación de contenido multimedia, como videos y a
 - `controls`: Agrega controles de reproducción al video o audio.
 
 # CSS
+
+Podría definirse como un tipo de lenguaje que permite definir y crear la presentación visual de un documento ya estructurado y escrito en un lenguaje de marcado como puede ser HTML. Es decir, permite generar el diseño visual de páginas web e interfaces de usuario.
+
 ### Selectores CSS
 
 Los selectores CSS se utilizan para seleccionar y aplicar estilos a elementos HTML específicos en una página web.
